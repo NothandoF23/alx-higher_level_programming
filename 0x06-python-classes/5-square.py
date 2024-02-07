@@ -11,7 +11,7 @@ class Square:
         Args:
             size (int): The size of the new square
         """
-        self.__size = size
+        self.size = size
 
         @property
         def size(self):
@@ -33,8 +33,7 @@ class Square:
         def my_print(self):
             """prints in stdout the square with the character #"""
             for i in range(0, self.__size):
-                print("#", end="")
-                for j in range(0, self.__size):
-                    print("")
+                [print("#", end="") for j in range(0, self.__size)]
+                print("")
             if self.__size == 0:
                 print("")
