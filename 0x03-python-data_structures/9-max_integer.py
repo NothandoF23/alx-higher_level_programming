@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
     if my_list:
-        size = len(my_list) - 1
+        size = len(my_list)
         i = 1
         maxx = my_list[0]
         while i < size:
